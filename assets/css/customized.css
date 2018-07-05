@@ -1,0 +1,20 @@
+
+.main .section:first-of-type {
+    position: relative;
+    z-index: 2;
+}
+.carousel-title {
+	color: green;
+}
+
+.carousel-header {
+	font-weight: 1000;
+	font-size: 25px;
+	color: white;
+}
+
+.carousel-paragraph {
+	font-weight: 500;
+	font-size: 25px;
+	color: white;
+}
