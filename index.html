@@ -15,10 +15,6 @@
 
     <meta name="mobile-web-app-capable" content="yes">
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <!-- <script src="assets/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script> -->
-
-
     <!-- Bootstrap core CSS     -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/paper-kit.css?v=2.1.0" rel="stylesheet"/>
@@ -29,11 +25,13 @@
     <!-- only works in local test machine -->
     <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet"> -->
 
-    <!-- icons will also work in live server if with http(s) source -->
+    <!-- icons will also work in live server if with secured http(s) source -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- other link available font awesome -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <!-- nucleo icons -->
     <link href="assets/css/nc_icon_glyph.css" rel="stylesheet">
 
 	
@@ -61,17 +59,21 @@
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav ml-auto">
                 	
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link"><i class="nc-icon nc-home-52"></i>Home</a>
+                    <li class="nav-item">                      
+                        <a href="index.html" class="nav-link">
+                        <i class="fa fa-home"></i>Home</a>
+                    </li>
+                    <li class="nav-item">                        
+                        <a href="#view-my-work" class="nav-link">
+                        <i class="fa fa-newspaper-o"></i>View my work</a>
+                    </li>
+                    <li class="nav-item">                        
+                        <a href="#about-me" class="nav-link">
+                        <i class="fa fa-vcard-o"></i>About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#view-my-work" class="nav-link"><i class="nc-icon nc-archive-2"></i>View my work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about-me" class="nav-link"><i class="nc-icon nc-single-01"></i>About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact-me" target="_blank" class="nav-link"><i class="nc-icon nc-email-84"></i>Contact</a>
+                        <a href="#contact-me" target="_blank" class="nav-link">
+                        <i class="fa fa-envelope-o"></i>Contact</a>
                     </li>
                     
                     <li class="nav-item">
@@ -126,18 +128,22 @@
                  </div>   
                 <!-- end animation devices loop    -->
                 
-                <a href="#view-my-work">
+                <!-- <a href="#view-my-work">
                     <h1 style="margin-top: -15px;"><i class="nc-icon nc-square-download"></i></h1>
+                </a> -->
+
+                <a href="#view-my-work">
+                    <h1 style="margin-top: -15px;"><i class="fa fa-sort-down"></i></h1>
                 </a>
 
-                <div class="alert alert-info">
+                <!-- <div class="alert alert-info">
 			        <div class="container">
 			          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-			            <i class="nc-icon nc-favourite-31"></i>
+			            <i class="fa fa-window-close-o"></i>
 			          </button>
 			          <span>This is a notification with close button. </span>
 			        </div>
-			    </div>
+			    </div> -->
 
                 <!-- <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-outline-neutral btn-round"><i class="fa fa-play"></i>Watch video</a>
                 <button type="button" class="btn btn-outline-neutral btn-round">Download</button> -->
@@ -253,19 +259,19 @@
                                 <a class="btn btn-link btn-just-icon btn-neutral" rel="tooltip" title="Like me on Facebook" data-placement="bottom" href="https://www.facebook.com/aldrin.m.galman" target="_blank">
                                     <i class="fa fa-facebook-square"></i>
                                     <!-- <i style="content: url(assets/fonts/social-1_square-facebook.svg);"></i> -->
-                                    <p class="d-lg-none">Facebook</p>
+                                    <!-- <p class="d-lg-none">Facebook</p> -->
                                 </a>
 
                                 <a class="btn btn-link btn-just-icon btn-neutral" rel="tooltip" title="Give me star on GitHub" data-placement="bottom" href="https://github.com/aldringalman" target="_blank">
                                     <i class="fa fa-github"></i>
                                     <!-- <i style="content: url(assets/fonts/social-1_square-github.svg);"></i> -->
-                                    <p class="d-lg-none">GitHub</p>
+                                    <!-- <p class="d-lg-none">GitHub</p> -->
                                 </a>
 
                                 <a class="btn btn-link btn-just-icon btn-neutral" rel="tooltip" title="Check out my LinkedIn" data-placement="bottom" href="https://www.linkedin.com/in/aldrin-galman/" target="_blank">
                                     <i class="fa fa-linkedin"></i>
                                     <!-- <i style="content: url(assets/fonts/social-1_square-linkedin.svg);"></i> -->
-                                    <p class="d-lg-none">LinkedIn</p>
+                                    <!-- <p class="d-lg-none">LinkedIn</p> -->
                                 </a>
 
                             </div>
@@ -294,7 +300,8 @@
                                     <label>Name</label>
                                     <div class="input-group">
                                         <span class="input-group-addon">
-                                            <i class="nc-icon nc-single-01"></i>
+                                            <!-- <i class="nc-icon nc-single-01"></i> -->
+                                            <i class="fa fa-user-o"></i>
                                         </span>
                                         <input type="text" class="form-control" placeholder="Your Name">
                                     </div>
@@ -303,7 +310,8 @@
                                     <label>Email</label>
                                     <div class="input-group">
                                         <span class="input-group-addon">
-                                            <i class="nc-icon nc-email-84"></i>
+                                            <!-- <i class="nc-icon nc-email-84"></i> -->
+                                            <i class="fa fa-envelope-o"></i>
                                         </span>
                                         <input type="text" class="form-control" placeholder="Your Email">
                                     </div>
@@ -312,7 +320,8 @@
                             <label>Message</label>
                             <div class="input-group">
                                 <span class="input-group-addon">
-                                    <i class="nc-icon nc-pencil"></i>
+                                    <!-- <i class="nc-icon nc-pencil"></i> -->
+                                    <i class="fa fa-pencil-square-o"></i>
                                 </span>
                                 <textarea class="form-control" rows="4" placeholder="Tell me your thoughts and feelings..."></textarea>
                             </div>
@@ -342,7 +351,7 @@
                 </nav>
                 <div class="credits ml-auto">
                     <span class="copyright">
-                        © <script>document.write(new Date().getFullYear())</script>, made with <i class="nc-icon nc-heart-2"></i> by Aldrin M. Galman
+                        © <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart-o"></i> by Aldrin M. Galman
                     </span>
                 </div>
             </div>
