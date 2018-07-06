@@ -40,11 +40,54 @@
     <link rel="stylesheet" type="text/css" href="assets/css/hover-box-animate.css">
     <link href="assets/css/customized.css" rel="stylesheet">
     
+    <!-- loading screen styles come here -->
+    <style>
+    	div#homepage {
+    		display: none;
+    	}    	
+    	div#load_screen {
+    		background: #111;
+    		opacity: 1;
+    		position: fixed;
+    		z-index: 10;
+    		top: 0;
+    		width: 100%;
+    		height: 1600px;
+    	}
+    	div#load_screen > div#loading {
+    		color: #fff;
+    		width: 100%;
+    		height: 24px;
+    		text-align: center;
+    		margin: 300px auto;
+    	}
+    </style>
+    <!-- end loading screen styles -->
+
+    <!-- loading screen script come here -->
+    <script>
+    	window.addEventListener("load", function() {
+    		var load_screen = document.getElementById("load_screen");
+
+    		document.body.removeChild(load_screen);
+
+    		document.getElementById("homepage").style.display = "block";   		
+    	});
+    </script>
+    <!-- end loading screen script -->
+
     <title>Welcome to my Profile</title>
 
 </head>
 <body>
-	
+
+<div id="load_screen">
+	<div id="loading">
+		Please wait loading document...
+	</div>
+</div>	
+
+<div id="homepage">
     <!-- navigation come here -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="300">
         <div class="container">
@@ -359,7 +402,7 @@
     </footer>
     <!-- end footer come here -->
 
-
+</div>
     <!-- <input type="hidden" id="progress_width" value="0"> -->
 </body>
 
